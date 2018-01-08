@@ -6,7 +6,7 @@ const Accessory = require('./accessory');
 const costumeSchema = new mongoose.Schema({
 
   name: {type: String, required: true},
-  profile: String,
+  description: String,
   parts: {type: mongoose.Schema.Types.ObjectId, ref: 'Accessory'},
   createDate: {type: Date, default: Date.now}
 
