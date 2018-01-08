@@ -3,8 +3,7 @@ const emptyState = [];
 let validateData = (costume) => {
 
   if(costume.name.length < 1) { throw new Error('No costume name')};
-  // if(costume.description.length < 1) {throw new Error('No description given')};
-  // if(costume.id.length < 1) {throw new Error('No ID given')};
+  if(costume.description.length < 1) {throw new Error('No description given')};
   
 }
 
