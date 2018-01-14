@@ -9,14 +9,14 @@ class CostumeList extends React.Component {
   render() {
 
     const costumes = this.props.costumes;
-    console.log('costumes is ', costumes)
+
     return (
       <div id="kanban">
         {
-            costumes.map(costume =>
+            costumes.map((costume, i) =>
             <CostumeItem handleDelete={this.props.handleDelete}
               handleUpdate={this.props.handleUpdate}
-              key={costume.id} costume={costume} 
+              key={i} costume={costume} 
             />)
         }
       </div>

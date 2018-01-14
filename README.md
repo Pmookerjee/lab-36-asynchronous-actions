@@ -1,6 +1,7 @@
 ## Usage
 
-1. `cd frontend` and create a .env file with `API_URL=http://localhost:3000`
+1. `cd frontend` and create a .env file with `API_URL=http://localhost:3000/api` and 
+`NODE_ENV=dev`
 Do an `npm i` from this directory, and then run `npm run watch` to start webpack and react 
 2. `cd backend` and create a .env file with 
 PORT=3000

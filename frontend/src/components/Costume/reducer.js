@@ -20,10 +20,12 @@ export default (state=emptyState, {type, payload}) => {
 
     case "COSTUME_UPDATE":
      validateData(payload);        
-     return state.map(item => item.id === payload.id ? payload : item );
+     return state.map(item => {
+       console.log('item is ', item);
+       item._id === payload._id ? payload : item });
       
     case "COSTUME_DESTROY":
-     return state.filter(item => item.id !== payload)
+     return state.filter(item => item._id !== payload)
       
     default:
         return state;

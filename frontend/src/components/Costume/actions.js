@@ -20,12 +20,11 @@ export const createCostume = payload => dispatch => {
 };
 
 export const updateCostume = payload => dispatch => {
-  
+
   request.put(`${API}/costume/${payload._id}`)
     .send(payload)
     .then(res => {
       dispatch(update(res.body));
-      location.reload();      
     })
     .catch(console.error);
 

@@ -4,7 +4,6 @@
   align-items: center;
 
   &:hover {
-    @include box-basic;
     background: black;
     outline: none;
   }
@@ -22,7 +21,7 @@ div#costumeForm {
 }
 
 #costumeDescrip {
-  width: $budget-amt-width;
+  width: $description-amt-width;
 }
 
 
